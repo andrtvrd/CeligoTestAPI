@@ -18,6 +18,14 @@ app.post("/api/test/source-data", function(request, response) {
      response.send(dataFromCeligo)
 
 });
+app.post("/api/test/source-data", function(request, response) {
+    dataFromCeligo = request.body
+    //run CeligoAPI with id
+    //record jobId
+    //wait until jobId is finished
+    //
+
+});
 
 module.exports = app;
 //app.listen(80);
