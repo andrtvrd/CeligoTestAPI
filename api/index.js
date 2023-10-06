@@ -7,7 +7,7 @@ var myParser = require("body-parser");
 var dataFromCeligo;
 
 app.use(myParser.json());
-app.get("/api", function(request, response) {
+app.get("/", function(request, response) {
     response.setHeader('Content-Type', 'text/html');
     response.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
     response.send("Hello this is Home")
