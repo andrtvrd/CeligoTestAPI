@@ -1,8 +1,7 @@
 //Import the necessary libraries/declare the necessary objects
-//var express = require("express");
-var app = require("express")
+var app = require("express")()
 var myParser = require("body-parser");
-//var app = express();
+
 
 var dataFromCeligo;
 
