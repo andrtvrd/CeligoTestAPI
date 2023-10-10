@@ -43,14 +43,14 @@ app.post('/api/flows/6511e24f876889750ba5f674/run', function(request, response) 
     )
 });
 
-app.get('/test_delay', function(request, response) {
+app.post('/test_delay', function(request, response) {
     setTimeout((() => {
         response.send('Hello this is Home');
-      }), 4000)
+      }), 120000)
 });
 
-//module.exports = app;
-app.listen(80);
+module.exports = app;
+//app.listen(80);
 
     //run CeligoAPI with id
     //record jobId
