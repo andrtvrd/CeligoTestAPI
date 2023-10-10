@@ -46,7 +46,7 @@ app.post('/api/flows/6511e24f876889750ba5f674/run', function(request, response) 
 app.post('/api/test_delay', function(request, response) {
     setTimeout((() => {
         response.send('Hello this is Home');
-      }), 2400)
+      }), 24000)
 });
 
 module.exports = app;
